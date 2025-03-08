@@ -1,0 +1,1 @@
+{"bpf_skel":{"data_sections":[],"maps":null,"obj_name":"anticheat_bpf","progs":[{"attach":"uretprobe/../hangman/hangman:read_guesses","link":true,"name":"uretprobe_read_guesses"}]},"eunomia_version":"0.3.4"}

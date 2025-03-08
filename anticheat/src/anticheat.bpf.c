@@ -5,4 +5,15 @@
 
 char LICENSE[] SEC("license") = "Dual BSD/GPL";
 
-// Place your code here
+// Hook the read_guesses function with a uprobe
+SEC("uretprobe/../hangman/hangman:read_guesses")
+int BPF_KRETPROBE(uretprobe_read_guesses, int ret)
+{
+    // Check if the number of guesses is different from 6
+    if (ret != 6) {
+        // Kill the process with SIGKILL (signal 9)
+        bpf_send_signal(9);
+    }
+
+    return 0;
+}
