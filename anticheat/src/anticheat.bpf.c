@@ -6,7 +6,7 @@
 char LICENSE[] SEC("license") = "Dual BSD/GPL";
 
 // Hook the read_guesses function with a uprobe
-SEC("uretprobe/../hangman/hangman:read_guesses")
+SEC("uretprobe/hangman/hangman:read_guesses")
 int BPF_KRETPROBE(uretprobe_read_guesses, int ret)
 {
     // Check if the number of guesses is different from 6
