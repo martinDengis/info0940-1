@@ -7,3 +7,5 @@ This repository serves as the central hub for projects related to the Operating 
 ## Project Structure
 
 - **anticheat/**: Contains the files and code for the anti-cheat challenge, which involves implementing a kernel-level anti-cheat system using eBPF for a simple hangman game.
+- **seccomp/**: Houses implementation and examples of secure computing mode (seccomp) for system call filtering and sandboxing techniques.
+- **page_faults/**: Contains materials and code related to the page fault handling mechanisms, exploring memory management concepts in operating systems.

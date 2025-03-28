@@ -1,0 +1,40 @@
+{
+  "bpf_skel": {
+    "data_sections": [
+      {
+        "name": ".bss",
+        "variables": [
+          {
+            "name": "__eunomia_dummy_struct_to_give_to_perf_ptr",
+            "type": "struct struct_to_give_to_perf *"
+          }
+        ]
+      }
+    ],
+    "maps": [
+      { "ident": "perf_map", "name": "perf_map" },
+      { "ident": "rodata_str1_1", "name": ".rodata.str1.1" },
+      { "ident": "bss", "mmaped": true, "name": "perf_exa.bss" }
+    ],
+    "obj_name": "perf_example_bpf",
+    "progs": [
+      {
+        "attach": "tracepoint/syscalls/sys_enter_execve",
+        "link": true,
+        "name": "tracepoint_syscalls_sys_enter_execve"
+      }
+    ]
+  },
+  "eunomia_version": "0.3.4",
+  "export_types": [
+    {
+      "members": [
+        { "name": "pid", "type": "int" },
+        { "name": "message", "type": "char[20]" }
+      ],
+      "name": "struct_to_give_to_perf",
+      "size": 24,
+      "type_id": 25
+    }
+  ]
+}
