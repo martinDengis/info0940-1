@@ -13,7 +13,7 @@ For this challenge, the files to download are simply the template for your code:
 $ wget --no-check-certificate https://people.montefiore.uliege.be/~gain/courses/info0940/asset/keylogger.tar.gz
 $ tar -xzvf keylogger.tar.gz
 ```
-Your task is to develop a keylogger that tracks and stores specific keystrokes entered by the user, then displays all the saved keys when the user presses the ENTER key. All the keys must be shown by the eBPF program using a **perf buffer**.
+Your task is to develop a keylogger that tracks and stores specific keystrokes entered by the user, then displays all the saved keys when the user presses the `ENTER` key. All the keys must be shown by the eBPF program using a **perf buffer**.
 
 ## What you need to do
 
