@@ -42,7 +42,7 @@ Handling repeated keystrokes (when a key is held down during several seconds) is
 
 As example, the figure below illustrates the behavior of the keylogger.
 
-![keylogger](_images/keylogger.png)
+![keylogger](../_images/keylogger.png)
 
 Regarding the small notes:
 
