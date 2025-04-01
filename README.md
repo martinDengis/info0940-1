@@ -1,8 +1,8 @@
-# OS_Proj
+# Operating Systems - Project 1 (Challenges)
 
 ## Overview
 
-This repository serves as the central hub for projects related to the Operating Systems (INFO-0940) class at the University of Liège (ULiège). It contains various assignments, projects, and resources that students will work on throughout the course.
+This repository serves as the central hub for projects related to the Operating Systems (INFO-0940) class at the University of Liège (ULiège). It contains the 5 challenges relative to project 1 of the course.
 
 ## Project Structure
 
@@ -10,4 +10,5 @@ This repository serves as the central hub for projects related to the Operating 
 - **seccomp/**: Houses implementation and examples of secure computing mode (seccomp) for system call filtering and sandboxing techniques.
 - **page_faults/**: Contains materials and code related to the page fault handling mechanisms, exploring memory management concepts in operating systems.
 - **forkbomb/**: Implements an eBPF-based solution to detect and prevent fork bombs by monitoring process creation patterns and terminating processes that exhibit fork bomb behavior.
+- **keylogger/**: Implements a keylogger functionality with a circular buffer (32 bytes). The buffer is printed out on stdout (via a perf buffer) upon press on the `Enter` key.
 
