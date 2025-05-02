@@ -14,5 +14,5 @@ This repository serves as the central hub for projects related to the Operating 
 
 ## Authors
 
-- @martinDengis
-- @giooms
+- [@martinDengis](https://github.com/martinDengis)
+- [@giooms](https://github.com/giooms)
